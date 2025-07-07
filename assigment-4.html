@@ -1,0 +1,22 @@
+<script>
+    let array = [];
+    let total = 0;
+    for (let i  = 0; i <10; i++){
+        let input = Number(prompt('Enter number:'));
+        array.push(input);
+    }
+
+    console.log("Your numbers:", array);
+    
+    for (let i = 0; i< array.length; i++) {
+        total += array[i];
+    }
+
+    console.log("Total:", total);
+
+
+    let average = total / array.length;
+
+    console.log('Average:', average);
+
+</script>

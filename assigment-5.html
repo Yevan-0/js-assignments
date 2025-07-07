@@ -1,0 +1,16 @@
+<script>
+    let paragraph = prompt('Enter paragraph');
+    let  words  = paragraph.split(" ");
+    let array =[];
+
+    for (let i = 0; i<words.length; i++) {
+        array.push(words[i]);
+    }
+
+    let newarray = [];
+    newarray = array.filter((item, index) => array.indexOf(item) === index);
+
+    newarray.sort();
+    
+    console.log('Your array:', newarray);
+</script>

@@ -1,0 +1,51 @@
+<html>
+    <body>
+
+        <h2>JS in body</h2>
+        <p id="demo"></p>
+
+        <script>
+            document.getElementById('demo').innerHTML = "Hello world"
+        </script>
+    </body>
+</html>
+
+
+<html>
+    <head>
+        <script>
+            function myFunction() {
+                document.getElementById('demo2').innerHTML = "changed"
+            }
+        </script>
+    </head>
+
+    <body>
+        <h2>JS in head</h2>
+
+        <p id="demo2">clicking button will change this</p>
+
+        <button type="button" onclick="myFunction()">Try it</button>
+    </body>
+</html>
+
+
+
+<html>
+
+    <body>
+        <h2>JS in body</h2>
+
+        <p id="demo3">clicking button will change this</p>
+
+        <button type="button" onclick="myFunction()">Try it</button>
+
+          <script>
+            function myFunction() {
+                document.getElementById('demo3').innerHTML = "script is typed in the body"
+            }
+        </script>
+
+    </body>
+
+</html>

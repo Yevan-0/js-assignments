@@ -1,0 +1,18 @@
+<script>
+    let fruits = ['Apples' ,'Banana', 'Mango', 'Oranges', 'Grapes'];
+    let vegetable = ['Carrot', 'Spinach', 'Brocolli', 'Cabbage', 'Tomato']
+
+    let input1 = prompt('Enter 1st input');
+    let input2 = prompt('Enter 2nd input');
+
+    input1 = input1.charAt(0).toUpperCase() + input1.slice(1).toLowerCase();
+    input2 = input2.charAt(0).toUpperCase() + input2.slice(1).toLowerCase();
+
+    if (fruits.includes(input1) && vegetable.includes(input2)) {
+        alert(input1 + " " + "is a fruit and" + " " + input2 + " " + "is a vegetable" );
+    }
+
+    else if (vegetable.includes(input1) && fruits.includes(input2)) {
+        alert(input1 + " " + "is a vegetable and" + " " + input2 + " " + "is a fruit" );
+    }
+</script>

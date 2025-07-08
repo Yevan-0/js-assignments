@@ -1,0 +1,42 @@
+<script>
+    let numbers = prompt('Enter your numbers');
+
+    let numberArray = numbers.split(',');
+
+    let mappedArray = numberArray.map(string => Number(string));
+
+    let odd = mappedArray.some(num => num % 2 === 1 );
+
+    
+    console.log(mappedArray);
+
+    if (odd){
+        console.log('Odd numbers available');
+    }
+
+    
+    function checkAllEven (mappedArray) {
+        for (let i = 0; i <mappedArray.length; i++) {
+
+            if (mappedArray[i] % 2 !== 0) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    let results = checkAllEven(mappedArray);
+    if(results) {
+        console.log('All numbers are even');
+    }
+
+    let limit = mappedArray.filter(number => number < 10);
+    console.log('Numbers less than 10:',limit);
+
+    
+
+
+
+    
+</script>

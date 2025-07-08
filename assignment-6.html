@@ -15,13 +15,13 @@
     }
 
     
-    let allEven = mappedArray.find(checkforeven);
-
-    function checkforeven (value, index, mappedArray){
-        num => num % 2 !== 1;
+    let allEven = mappedArray.every(num => num % 2 === 0);
+    
+    if (allEven) {
+        console.log('All numbers are even', allEven)
     }
 
-    console.log('All numbers are even:', allEven);
+
 
     let limit = mappedArray.filter(number => number < 10);
     console.log('Numbers less than 10:',limit);
